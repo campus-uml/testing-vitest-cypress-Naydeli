@@ -1,6 +1,5 @@
 name: CI/CD y Cypress E2E Tests
 
-
 on:
   push:
     branches:
@@ -10,7 +9,7 @@ on:
       - main
 
 jobs:
-  test:
+  ci:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,5 +26,3 @@ jobs:
 
       - name: 🧪 Correr tests con coverage
         run: npm run test -- --coverage
-
-     
